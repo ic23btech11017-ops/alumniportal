@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alumni Portal | Settings</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+
+    <script src="./js/navigation.js" defer></script>
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <div class="layout">
+      <aside class="sidebar" data-sidebar aria-label="Primary"></aside>
+
+      <div class="main">
+        <header class="topbar" data-topbar></header>
+        <main class="content" id="main-content">
+          <div class="container">
+            <header class="page-header">
+              <div>
+                <h2 class="page-header__title">Account Settings</h2>
+                <p class="page-header__subtitle">
+                  Manage personal information, privacy, notifications, and security.
+                </p>
+              </div>
+            </header>
+
+            <section class="grid grid-12" aria-label="Settings layout">
+              <aside class="span-4 stack" aria-label="Settings sections">
+                <nav class="card" aria-label="Settings menu">
+                  <div class="stack stack--sm" data-tablist data-settings-tabs>
+                    <button
+                      class="tab"
+                      type="button"
+                      role="tab"
+                      aria-selected="true"
+                      data-tab="account"
+                      aria-controls="settings-panel-account"
+                    >
+                      Account Info
+                    </button>
+                    <button
+                      class="tab"
+                      type="button"
+                      role="tab"
+                      aria-selected="false"
+                      data-tab="privacy"
+                      aria-controls="settings-panel-privacy"
+                    >
+                      Privacy
+                    </button>
+                    <button
+                      class="tab"
+                      type="button"
+                      role="tab"
+                      aria-selected="false"
+                      data-tab="notifications"
+                      aria-controls="settings-panel-notifications"
+                    >
+                      Notifications
+                    </button>
+                    <button
+                      class="tab"
+                      type="button"
+                      role="tab"
+                      aria-selected="false"
+                      data-tab="security"
+                      aria-controls="settings-panel-security"
+                    >
+                      Security
+                    </button>
+                  </div>
+                </nav>
+
+                <section class="card" aria-label="Profile summary">
+                  <div class="profile-header__identity">
+                    <img
+                      class="avatar avatar--md"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUtIzsNhvyR47DYbnOXwNOJQQRc6PI55b4POZlt3j4V1V3x1zDDI4Vq8qlf6jLUQSzOp6-hD99SsW10HRid_Q4d4FCjPfBJajgCvL4ebpIuuge-zgA8a5ymUwQbls4ztivtrGWw1UhOHHN9wCpi6ALjCiKfFrgSfEEwhusmDCtmxMRtuGdBtVUtS3dLmHjl2z5szgGRQlQ8gHyGsfo5I7sTAkw_wzmiiNfrjnGPJlAbOOTtekv8PGt1cau4Gk7idOUO2XoLaRQAms"
+                      alt="Profile picture of Alex Morgan"
+                      loading="lazy"
+                    />
+                    <div>
+                      <strong>Alex Morgan</strong>
+                      <div class="meta">Civil Engineering • Class of 1998</div>
+                    </div>
+                  </div>
+                </section>
+              </aside>
+
+              <section class="span-8 stack" aria-label="Settings details">
+                <section class="card" id="settings-panel-account" data-tabpanel aria-label="Account Info">
+                  <div class="card__header">
+                    <div>
+                      <h3 class="card__title" id="personal-info-title">Personal Information</h3>
+                      <p class="card__subtitle">Keep your account details up to date.</p>
+                    </div>
+                    <span class="meta">Last updated: Oct 24, 2023</span>
+                  </div>
+
+                  <form class="form" action="#" method="post">
+                    <div class="form-grid-2">
+                      <div class="form-row">
+                        <label class="form-label" for="first-name">First Name</label>
+                        <input class="input-field" id="first-name" name="firstName" type="text" value="Alex" />
+                      </div>
+                      <div class="form-row">
+                        <label class="form-label" for="last-name">Last Name</label>
+                        <input class="input-field" id="last-name" name="lastName" type="text" value="Morgan" />
+                      </div>
+                    </div>
+
+                    <div class="form-grid-2">
+                      <div class="form-row">
+                        <label class="form-label" for="email">Primary Email</label>
+                        <input
+                          class="input-field"
+                          id="email"
+                          name="email"
+                          type="email"
+                          value="alex.morgan@example.com"
+                        />
+                      </div>
+                      <div class="form-row">
+                        <label class="form-label" for="phone">Phone</label>
+                        <input class="input-field" id="phone" name="phone" type="tel" placeholder="Add phone number" />
+                      </div>
+                    </div>
+
+                    <div class="form-actions">
+                      <button class="btn btn-ghost" type="reset">Cancel</button>
+                      <button class="btn btn-primary" type="submit">Save Changes</button>
+                    </div>
+                  </form>
+                </section>
+
+                <section
+                  class="card"
+                  id="settings-panel-privacy"
+                  data-tabpanel
+                  aria-label="Privacy"
+                  hidden
+                >
+                  <div class="card__header">
+                    <h3 class="card__title" id="privacy-title">Privacy</h3>
+                  </div>
+                  <ul class="list">
+                    <li class="list-item">
+                      <div>
+                        <strong>Profile visibility</strong>
+                        <div class="meta">Visible to verified alumni</div>
+                      </div>
+                      <button class="btn btn-ghost" type="button">Change</button>
+                    </li>
+                    <li class="list-item">
+                      <div>
+                        <strong>Show contact info</strong>
+                        <div class="meta">Email visible to connections</div>
+                      </div>
+                      <button class="btn btn-ghost" type="button">Change</button>
+                    </li>
+                  </ul>
+                </section>
+
+                <section
+                  class="card"
+                  id="settings-panel-notifications"
+                  data-tabpanel
+                  aria-label="Notifications"
+                  hidden
+                >
+                  <div class="card__header">
+                    <h3 class="card__title">Notifications</h3>
+                  </div>
+                  <ul class="list">
+                    <li class="list-item">
+                      <div>
+                        <strong>Email updates</strong>
+                        <div class="meta">Weekly digest and important announcements</div>
+                      </div>
+                      <button class="btn btn-ghost" type="button">Manage</button>
+                    </li>
+                    <li class="list-item">
+                      <div>
+                        <strong>Event reminders</strong>
+                        <div class="meta">Remind me before RSVP deadlines</div>
+                      </div>
+                      <button class="btn btn-ghost" type="button">Manage</button>
+                    </li>
+                  </ul>
+                </section>
+
+                <section
+                  class="card"
+                  id="settings-panel-security"
+                  data-tabpanel
+                  aria-label="Security"
+                  hidden
+                >
+                  <div class="card__header">
+                    <h3 class="card__title" id="security-title">Security</h3>
+                  </div>
+                  <ul class="list">
+                    <li class="list-item">
+                      <div>
+                        <strong>Password</strong>
+                        <div class="meta">Last changed 3 months ago</div>
+                      </div>
+                      <button class="btn btn-ghost" type="button">Update</button>
+                    </li>
+                    <li class="list-item">
+                      <div>
+                        <strong>Two-factor authentication</strong>
+                        <div class="meta">Enabled</div>
+                      </div>
+                      <button class="btn btn-ghost" type="button">Configure</button>
+                    </li>
+                  </ul>
+                </section>
+              </section>
+            </section>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

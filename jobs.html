@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alumni Portal | Job Board</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+
+    <script src="./js/navigation.js" defer></script>
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <div class="layout">
+      <aside class="sidebar" data-sidebar aria-label="Primary"></aside>
+
+      <div class="main">
+        <header class="topbar" data-topbar></header>
+        <main class="content" id="main-content">
+          <div class="container">
+            <header class="page-header">
+              <div>
+                <h2 class="page-header__title">Job Board</h2>
+                <p class="page-header__subtitle">Opportunities shared by alumni and partners.</p>
+              </div>
+            </header>
+
+            <section class="grid grid-12" aria-label="Job board layout">
+              <section class="span-8 stack" aria-label="Job listings">
+                <section class="card" aria-label="Job search and filters">
+                  <form class="form" action="#" method="get">
+                    <div class="form-row">
+                      <label class="form-label" for="job-search">Search</label>
+                      <input
+                        class="input-field"
+                        id="job-search"
+                        name="q"
+                        type="search"
+                        placeholder="Search by title, company, or keyword…"
+                      />
+                    </div>
+
+                    <div class="form-grid-2" aria-label="Filters">
+                      <div class="form-row">
+                        <label class="form-label" for="job-location">Location</label>
+                        <input
+                          class="input-field"
+                          id="job-location"
+                          name="location"
+                          type="text"
+                          placeholder="e.g., Bangalore, Mumbai, Remote"
+                        />
+                      </div>
+                      <div class="form-row">
+                        <label class="form-label" for="job-exp">Experience</label>
+                        <input
+                          class="input-field"
+                          id="job-exp"
+                          name="exp"
+                          type="text"
+                          placeholder="e.g., 5–10 years"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-actions">
+                      <button class="btn btn-ghost" type="reset">Clear</button>
+                      <button class="btn btn-primary" type="submit">Apply Filters</button>
+                    </div>
+                  </form>
+                </section>
+
+                <article class="card" aria-label="Job: Senior Structural Engineer">
+                  <div class="card__header">
+                    <div>
+                      <h3 class="card__title">Senior Structural Engineer</h3>
+                      <p class="card__subtitle">BuildRight Constructions Ltd.</p>
+                      <p class="meta">Bangalore, India • 10–15 Years • Posted 2 days ago</p>
+                    </div>
+                    <span class="badge badge--accent">Featured</span>
+                  </div>
+                  <div class="tabs" aria-label="Skills">
+                    <span class="badge">Structural Analysis</span>
+                    <span class="badge">AutoCAD</span>
+                    <span class="badge">Team Leadership</span>
+                  </div>
+                  <div class="form-actions" aria-label="Job actions">
+                    <button class="btn btn-primary" type="button">Apply Now</button>
+                    <button class="btn btn-ghost" type="button">Save</button>
+                  </div>
+                </article>
+
+                <article class="card" aria-label="Job: Director of Engineering">
+                  <div class="card__header">
+                    <div>
+                      <h3 class="card__title">Director of Engineering</h3>
+                      <p class="card__subtitle">Global Tech Solutions</p>
+                      <p class="meta">Mumbai (Hybrid) • 15+ Years • Posted 5 hours ago</p>
+                    </div>
+                  </div>
+                  <div class="tabs" aria-label="Skills">
+                    <span class="badge">Project Management</span>
+                    <span class="badge">Agile</span>
+                  </div>
+                  <div class="form-actions" aria-label="Job actions">
+                    <button class="btn btn-ghost" type="button">View Details</button>
+                  </div>
+                </article>
+              </section>
+
+              <aside class="span-4 stack" aria-label="Job board sidebar">
+                <section class="card" aria-labelledby="featured-title">
+                  <div class="card__header">
+                    <h3 class="card__title" id="featured-title">Featured</h3>
+                    <a class="link" href="#">View all</a>
+                  </div>
+                  <ul class="list">
+                    <li class="list-item">
+                      <div>
+                        <strong>Lead Civil Engineer</strong>
+                        <div class="meta">UrbanTek • Boston, MA</div>
+                      </div>
+                      <span class="badge badge--success">Verified</span>
+                    </li>
+                    <li class="list-item">
+                      <div>
+                        <strong>Structural Consultant</strong>
+                        <div class="meta">Aecon Group • Remote</div>
+                      </div>
+                      <span class="badge">Remote</span>
+                    </li>
+                  </ul>
+                </section>
+
+                <section class="card" aria-labelledby="resources-title">
+                  <div class="card__header">
+                    <h3 class="card__title" id="resources-title">Career Resources</h3>
+                  </div>
+                  <ul class="list">
+                    <li class="list-item">
+                      <div>
+                        <strong>Negotiating your salary</strong>
+                        <div class="meta">Guide</div>
+                      </div>
+                      <a class="link" href="#">Read</a>
+                    </li>
+                    <li class="list-item">
+                      <div>
+                        <strong>Leadership in Engineering</strong>
+                        <div class="meta">Article</div>
+                      </div>
+                      <a class="link" href="#">Read</a>
+                    </li>
+                    <li class="list-item">
+                      <div>
+                        <strong>Resume writing guide</strong>
+                        <div class="meta">Checklist</div>
+                      </div>
+                      <a class="link" href="#">Read</a>
+                    </li>
+                  </ul>
+                </section>
+              </aside>
+            </section>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

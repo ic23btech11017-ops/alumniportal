@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alumni Portal | Events</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+
+    <script src="./js/navigation.js" defer></script>
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <div class="layout">
+      <aside class="sidebar" data-sidebar aria-label="Primary"></aside>
+
+      <div class="main">
+        <header class="topbar" data-topbar></header>
+        <main class="content" id="main-content">
+          <div class="container">
+            <header class="page-header">
+              <div>
+                <h2 class="page-header__title">Alumni Events</h2>
+                <p class="page-header__subtitle">
+                  Connect, network, and grow with fellow engineering graduates.
+                </p>
+              </div>
+              <div class="stack stack--sm" aria-label="Event actions">
+                <button class="btn btn-primary" type="button">Create Event</button>
+              </div>
+            </header>
+
+            <nav class="tabs" aria-label="Event filters" data-tablist>
+              <button class="tab" type="button" role="tab" aria-selected="true">All Events</button>
+              <button class="tab" type="button" role="tab" aria-selected="false">Webinars</button>
+              <button class="tab" type="button" role="tab" aria-selected="false">Reunions</button>
+              <button class="tab" type="button" role="tab" aria-selected="false">Networking</button>
+              <button class="tab" type="button" role="tab" aria-selected="false">Workshops</button>
+            </nav>
+
+            <section class="grid grid-3" aria-label="Event listings">
+              <article class="card card--flush" aria-label="Annual Engineering Excellence Gala">
+                <img
+                  class="media__img"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMWETPkt_w2fM4jCGsd7eiobyTat5HOefb34TzRQ7ICALcHqK4hM-s5PmZEj_JR93unOPjS97vDsydu2lvcR5zYPc7UY7p1yJNrCnzZRRZUBlQjcgmV6uYgka9gNnkPJneY5t22ujPdt5tsm3t0H2N3WcQBpdDgGdNlM8lgoQA0YSpGwRh_edPH9GSb5YQgrSMyeqaUsu72XrvcofncfCpngLyVNRpliN0KF76cWHze1B_bvE40U8fnAaVX8cyOouqlYBkeU_pGYU"
+                  alt="Conference hall with stage lighting"
+                  loading="lazy"
+                />
+                <div class="media__body">
+                  <span class="badge badge--accent">Conference</span>
+                  <h3 class="title-md">Annual Engineering Excellence Gala</h3>
+                  <p class="meta">Oct 15, 2023 • 6:00 PM – 10:00 PM</p>
+                  <p class="meta">Main Campus Auditorium</p>
+                  <div class="form-actions" aria-label="Event actions">
+                    <a class="btn btn-ghost" href="./events.html">View</a>
+                    <button class="btn btn-primary" type="button">RSVP</button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="card card--flush" aria-label="Tech Talk: AI in Engineering">
+                <img
+                  class="media__img"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMWETPkt_w2fM4jCGsd7eiobyTat5HOefb34TzRQ7ICALcHqK4hM-s5PmZEj_JR93unOPjS97vDsydu2lvcR5zYPc7UY7p1yJNrCnzZRRZUBlQjcgmV6uYgka9gNnkPJneY5t22ujPdt5tsm3t0H2N3WcQBpdDgGdNlM8lgoQA0YSpGwRh_edPH9GSb5YQgrSMyeqaUsu72XrvcofncfCpngLyVNRpliN0KF76cWHze1B_bvE40U8fnAaVX8cyOouqlYBkeU_pGYU"
+                  alt="Speaker presenting at a webinar"
+                  loading="lazy"
+                />
+                <div class="media__body">
+                  <span class="badge">Educational</span>
+                  <h3 class="title-md">Tech Talk: AI in Engineering</h3>
+                  <p class="meta">Nov 01, 2023 • Online Webinar</p>
+                  <p class="meta">Hosted by Alumni Mentorship Council</p>
+                  <div class="form-actions" aria-label="Event actions">
+                    <a class="btn btn-ghost" href="./events.html">View</a>
+                    <button class="btn btn-primary" type="button">RSVP</button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="card card--flush" aria-label="Regional Alumni Meet - NYC">
+                <img
+                  class="media__img"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMWETPkt_w2fM4jCGsd7eiobyTat5HOefb34TzRQ7ICALcHqK4hM-s5PmZEj_JR93unOPjS97vDsydu2lvcR5zYPc7UY7p1yJNrCnzZRRZUBlQjcgmV6uYgka9gNnkPJneY5t22ujPdt5tsm3t0H2N3WcQBpdDgGdNlM8lgoQA0YSpGwRh_edPH9GSb5YQgrSMyeqaUsu72XrvcofncfCpngLyVNRpliN0KF76cWHze1B_bvE40U8fnAaVX8cyOouqlYBkeU_pGYU"
+                  alt="Alumni networking in a formal venue"
+                  loading="lazy"
+                />
+                <div class="media__body">
+                  <span class="badge">Networking</span>
+                  <h3 class="title-md">Regional Alumni Meet - NYC</h3>
+                  <p class="meta">Nov 15, 2023 • Hilton Midtown, NY</p>
+                  <p class="meta">Limited seats • RSVP required</p>
+                  <div class="form-actions" aria-label="Event actions">
+                    <a class="btn btn-ghost" href="./events.html">View</a>
+                    <button class="btn btn-primary" type="button">RSVP</button>
+                  </div>
+                </div>
+              </article>
+            </section>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alumni Portal | News Feed</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+
+    <script src="./js/navigation.js" defer></script>
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <div class="layout">
+      <aside class="sidebar" data-sidebar aria-label="Primary"></aside>
+
+      <div class="main">
+        <header class="topbar" data-topbar></header>
+        <main class="content" id="main-content">
+          <div class="container">
+            <header class="page-header">
+              <div>
+                <h2 class="page-header__title">Community News Feed</h2>
+                <p class="page-header__subtitle">Updates, announcements, and alumni stories.</p>
+              </div>
+            </header>
+
+            <section class="grid grid-12" aria-label="Feed layout">
+              <section class="span-8 stack" aria-label="Posts">
+                <section class="card" aria-label="Create post">
+                  <form class="form" action="#" method="post">
+                    <div class="form-row">
+                      <label class="form-label" for="post-content">Share an update</label>
+                      <textarea
+                        class="textarea"
+                        id="post-content"
+                        name="content"
+                        placeholder="Write something to share with your alumni community…"
+                      ></textarea>
+                    </div>
+                    <div class="form-actions">
+                      <button class="btn btn-ghost" type="button">Add Photo</button>
+                      <button class="btn btn-primary" type="submit">Post</button>
+                    </div>
+                  </form>
+                </section>
+
+                <article class="card" aria-label="Post by David Chen">
+                  <header class="card__header">
+                    <div class="profile-header__identity" aria-label="Post author">
+                      <img
+                        class="avatar avatar--sm"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC21xG8qc6SolpO404aIxHBrRZrDdS26ye9pcezacaSBLTN65J2MpWgj47XvyC_0f8rlu8M2YIBFMsxiO_PoA2h4HXxG0M9bRJPmI8xChoyFDoLtgy2hy3PA508sey7SFAcrgT4aSUSZ82KrEUXIJcaWLPuhj8Ikx6g1CR7E6JY6HI1OJ7oSVx5w5wJuMJI_9Dy_I2tcKt2NqiuuZMd8uxbH0Ji69RWnzuXkeZTlK_U_XCFJT8DtzB-k54uwIBxFF91CFL1EG-gYGA"
+                        alt="Portrait of David Chen"
+                        loading="lazy"
+                      />
+                      <div>
+                        <strong>David Chen</strong>
+                        <div class="meta">Class of ’98 • 2 hours ago</div>
+                      </div>
+                    </div>
+                    <button class="icon-btn" type="button" aria-label="Post options">⋯</button>
+                  </header>
+                  <p class="m-0">
+                    Great to see the community growing. If anyone is attending the upcoming AI webinar,
+                    let’s connect beforehand.
+                  </p>
+                  <div class="post-actions" aria-label="Post actions">
+                    <button class="post-action" type="button">Like</button>
+                    <button class="post-action" type="button">Comment</button>
+                    <button class="post-action" type="button">Share</button>
+                  </div>
+                </article>
+
+                <article class="card" aria-label="Post about alumni event">
+                  <header class="card__header">
+                    <div class="profile-header__identity" aria-label="Post author">
+                      <img
+                        class="avatar avatar--sm"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkKvzHEF57yBNXxA5mjH3C8aCi0620Q837HDoBi5drELfCrCiq4OYZIntCWZQEioqxlx7Gfzu5cnmzURCbitKa6IbTMWKLarjByeMSgVqRPwRjTAMX5qSGwtNWE_TtOCP8VvBA5HsRDhxmtUCd442yHEhq7C9hGyaSd669B9ZhP8GH_qNOSvQGRDGDLWrniudK9cOShzYk3YGlraeInHL56a4Tw7aRFVggu76zvTeLBREgDVTkdHg5pa9cZ5PZ3OK95K9tHapyfOo"
+                        alt="Portrait of community member"
+                        loading="lazy"
+                      />
+                      <div>
+                        <strong>Community Desk</strong>
+                        <div class="meta">Announcement • Oct 24, 2023</div>
+                      </div>
+                    </div>
+                    <span class="badge badge--accent">Event</span>
+                  </header>
+                  <p class="m-0">
+                    Homecoming Dinner registrations are open. Please RSVP early to help us plan seating
+                    and accessibility arrangements.
+                  </p>
+                  <div class="post-actions" aria-label="Post actions">
+                    <button class="post-action" type="button">Like</button>
+                    <button class="post-action" type="button">Comment</button>
+                    <button class="post-action" type="button">Share</button>
+                  </div>
+                </article>
+              </section>
+
+              <aside class="span-4 stack" aria-label="Feed sidebar">
+                <section class="card" aria-labelledby="suggested-title">
+                  <div class="card__header">
+                    <h3 class="card__title" id="suggested-title">Suggested for you</h3>
+                    <a class="link" href="./directory.html">See all</a>
+                  </div>
+                  <ul class="list">
+                    <li class="list-item">
+                      <div class="profile-header__identity">
+                        <img
+                          class="avatar avatar--sm"
+                          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFZCk35wYVjI6heWnj8Sr23B4L1n4l7HCNutFZyAgodLIfTUklfqDVJnctzOP9Cxe0vRSo_7V7DvaEx-6RXmqbuJPu_7kFCqZEpiOjQxYvlC76VdO546JE0KDhXDMp1xy56fU24oPEh9de9bQyb8NYeA2pL0sJQn4qaloKLhEzoT9WFg8GaPa6Kbr2WupPDDX1rE7nZXOquZqQQLERybtA0wcr_6K96emUHrJJ-_A7uXri_xEW2eZDvYJeg7iIyJQyneOJ62tejzg"
+                          alt="Portrait of Michael Scott"
+                          loading="lazy"
+                        />
+                        <div>
+                          <strong>Michael Scott</strong>
+                          <div class="meta">Mechanical Eng. ’99</div>
+                        </div>
+                      </div>
+                      <button class="btn btn-ghost" type="button">Connect</button>
+                    </li>
+                    <li class="list-item">
+                      <div class="profile-header__identity">
+                        <img
+                          class="avatar avatar--sm"
+                          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkeF9nyOQQIQ2Xhxq9wAqBzW8d6i-ZpdBC3HaHiAwd_MGOdgoPkRH_BYawpEyIMGDuDzMfmL-DHC_ecr1_DBw-mde7DEjou3U50FEEc6iLPmEt_gM26eDmOGzBJ9rZX_tkYEY9Tg0iA4MFDB8yfANp1tcP0NRGCevfgbKbR36JEnJ679ALMcLGcz0cigUk6OhU7tHOvZJ2HRlG6GGzC0sDa9XfLGmZZwsnzrylZwWoVg9FI8cXH1TMZelQX-f9xV44uhpbO74n3uc"
+                          alt="Portrait of Linda Kim"
+                          loading="lazy"
+                        />
+                        <div>
+                          <strong>Linda Kim</strong>
+                          <div class="meta">Comp Sci. ’05</div>
+                        </div>
+                      </div>
+                      <button class="btn btn-ghost" type="button">Connect</button>
+                    </li>
+                  </ul>
+                </section>
+
+                <section class="card" aria-labelledby="trending-title">
+                  <div class="card__header">
+                    <h3 class="card__title" id="trending-title">Trending Topics</h3>
+                  </div>
+                  <ul class="list">
+                    <li class="list-item">
+                      <div>
+                        <strong>#Hiring</strong>
+                        <div class="meta">1,204 posts</div>
+                      </div>
+                      <a class="link" href="#">View</a>
+                    </li>
+                    <li class="list-item">
+                      <div>
+                        <strong>#AlumniMeet2024</strong>
+                        <div class="meta">856 posts</div>
+                      </div>
+                      <a class="link" href="#">View</a>
+                    </li>
+                    <li class="list-item">
+                      <div>
+                        <strong>#CampusMemories</strong>
+                        <div class="meta">329 posts</div>
+                      </div>
+                      <a class="link" href="#">View</a>
+                    </li>
+                  </ul>
+                </section>
+              </aside>
+            </section>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

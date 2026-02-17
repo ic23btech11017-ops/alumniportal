@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alumni Portal | Register</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+
+    <script src="./js/navigation.js" defer></script>
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <main class="auth" id="main-content">
+      <div class="auth__container container">
+        <section class="auth-card card" aria-label="Registration">
+          <div class="auth-cover" aria-hidden="true"></div>
+          <div class="auth-body">
+            <div class="auth-brand">
+              <div class="auth-logo" aria-hidden="true">
+                <div class="auth-logo__inner">
+                  <span class="material-symbols-outlined" aria-hidden="true">school</span>
+                </div>
+              </div>
+              <div>
+                <h1 class="auth-title">Create Alumni Account</h1>
+                <p class="auth-subtitle">Join the network of engineering excellence.</p>
+              </div>
+            </div>
+
+            <form class="form" action="./dashboard.html" method="get" aria-label="Registration form">
+              <div class="field">
+                <label class="form-label" for="reg-name">Full Name</label>
+                <div class="input-icon">
+                  <span class="input-icon__icon material-symbols-outlined" aria-hidden="true">person</span>
+                  <input class="input-field" id="reg-name" name="name" type="text" autocomplete="name" required />
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="form-label" for="reg-email">College Email</label>
+                <div class="input-icon">
+                  <span class="input-icon__icon material-symbols-outlined" aria-hidden="true">mail</span>
+                  <input
+                    class="input-field"
+                    id="reg-email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    placeholder="name@college.edu"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-grid-2">
+                <div class="field">
+                  <label class="form-label" for="reg-batch">Batch Year</label>
+                  <select class="select-field" id="reg-batch" name="batch" required>
+                    <option value="" selected disabled>Select Year</option>
+                    <option>2023</option>
+                    <option>2022</option>
+                    <option>2021</option>
+                    <option>2010</option>
+                    <option>2005</option>
+                    <option>1998</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label class="form-label" for="reg-branch">Branch</label>
+                  <select class="select-field" id="reg-branch" name="branch" required>
+                    <option value="" selected disabled>Select Branch</option>
+                    <option>Computer Science</option>
+                    <option>Mechanical Engineering</option>
+                    <option>Civil Engineering</option>
+                    <option>Electrical Engineering</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="form-label" for="reg-password">Password</label>
+                <div class="input-icon">
+                  <span class="input-icon__icon material-symbols-outlined" aria-hidden="true">lock</span>
+                  <input
+                    class="input-field"
+                    id="reg-password"
+                    name="password"
+                    type="password"
+                    autocomplete="new-password"
+                    required
+                    data-password
+                  />
+                  <button
+                    class="input-icon__btn"
+                    type="button"
+                    data-password-toggle
+                    aria-label="Show password"
+                  >
+                    <span class="material-symbols-outlined" aria-hidden="true">visibility</span>
+                  </button>
+                </div>
+              </div>
+
+              <button class="btn btn-primary btn-block" type="submit">Create Account</button>
+            </form>
+
+            <div class="auth-footer">
+              <p class="m-0">
+                Already have an account? <a class="link" href="./index.html">Sign in</a>
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

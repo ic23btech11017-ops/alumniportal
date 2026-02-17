@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alumni Portal | Profile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+
+    <script src="./js/navigation.js" defer></script>
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <div class="layout">
+      <aside class="sidebar" data-sidebar aria-label="Primary"></aside>
+
+      <div class="main">
+        <header class="topbar" data-topbar></header>
+        <main class="content" id="main-content">
+          <div class="container">
+            <header class="page-header">
+              <div>
+                <h2 class="page-header__title">Alumni Profile</h2>
+                <p class="page-header__subtitle">Professional profile and alumni details.</p>
+              </div>
+              <div class="stack stack--sm" aria-label="Profile actions">
+                <button class="btn btn-primary" type="button">Connect</button>
+                <button class="btn btn-ghost" type="button">Message</button>
+              </div>
+            </header>
+
+            <section class="card card--flush" aria-label="Profile header">
+              <div class="cover" aria-hidden="true"></div>
+              <div class="profile-header">
+                <div class="profile-header__top">
+                  <div class="profile-header__identity">
+                    <img
+                      class="avatar avatar--md"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAS5oXlu9NlQqwv8dn7o-aLv2Yo3U-rKDjWd1otsC3G0pOiqrzZINfalCPtNJnvuyAAcBkvJmBo5Zl7HA7v57MtshL6nYXlN88BpMHRl3DEAkkP5KjGSvacPms8iwTZRSfAk1NrwHcaasUXGbYp9s9EO0IM-7DYr-7N2hTWcoZBDtDcVkiFAC3lVrvycQ_ijpZ6PiXzhqWUBox_aDTy4JtPDPQKNnpVzMZe3Ld1l4cF_66HsqfdGjCc1dNR-0DzM1qS2941cvi0DSM"
+                      alt="Portrait of Dr. Alan Grant"
+                      loading="lazy"
+                    />
+                    <div>
+                      <h3 class="profile-header__name">Dr. Alan Grant</h3>
+                      <p class="profile-header__role">
+                        Sr. Structural Engineer at <strong>Apex Construction</strong>
+                      </p>
+                      <p class="meta">Class of 1995 • Civil Engineering • Chicago, IL</p>
+                    </div>
+                  </div>
+                  <div class="tabs" aria-label="Profile status">
+                    <span class="badge badge--success">Verified</span>
+                    <span class="badge badge--accent">Open to Opportunities</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="grid grid-12" aria-label="Profile details">
+              <section class="span-8 stack" aria-labelledby="about-title">
+                <article class="card">
+                  <div class="card__header">
+                    <h3 class="card__title" id="about-title">About</h3>
+                  </div>
+                  <p class="text-muted m-0">
+                    Over 25 years of experience in large-scale infrastructure projects, specializing in
+                    bridge design and urban planning. Committed to sustainable engineering practices and
+                    mentoring the next generation of civil engineers.
+                  </p>
+                </article>
+
+                <article class="card" aria-labelledby="experience-title">
+                  <div class="card__header">
+                    <h3 class="card__title" id="experience-title">Experience</h3>
+                    <button class="btn btn-ghost" type="button">Add</button>
+                  </div>
+                  <div class="card-list">
+                    <div>
+                      <strong>Sr. Structural Engineer</strong>
+                      <div class="meta">Apex Construction • Jan 2015 – Present</div>
+                      <p class="text-muted mt-2 m-0">
+                        Led multidisciplinary teams delivering bridge and urban infrastructure projects
+                        across multiple regions.
+                      </p>
+                    </div>
+                    <hr class="divider" />
+                    <div>
+                      <strong>Structural Engineer</strong>
+                      <div class="meta">Northline Projects • Jun 2006 – Dec 2014</div>
+                      <p class="text-muted mt-2 m-0">
+                        Designed structural systems, coordinated with stakeholders, and ensured code
+                        compliance across large builds.
+                      </p>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="card" aria-labelledby="skills-title">
+                  <div class="card__header">
+                    <h3 class="card__title" id="skills-title">Skills</h3>
+                  </div>
+                  <div class="tabs" aria-label="Skill tags">
+                    <span class="badge">Structural Analysis</span>
+                    <span class="badge">Project Leadership</span>
+                    <span class="badge">AutoCAD</span>
+                    <span class="badge">Sustainable Design</span>
+                  </div>
+                </article>
+              </section>
+
+              <aside class="span-4 stack" aria-label="Profile sidebar">
+                <article class="card" aria-labelledby="contact-title">
+                  <div class="card__header">
+                    <h3 class="card__title" id="contact-title">Contact</h3>
+                  </div>
+                  <ul class="list">
+                    <li class="list-item">
+                      <div>
+                        <strong>Email</strong>
+                        <div class="meta">alan.grant@example.com</div>
+                      </div>
+                      <button class="btn btn-ghost" type="button">Copy</button>
+                    </li>
+                    <li class="list-item">
+                      <div>
+                        <strong>LinkedIn</strong>
+                        <div class="meta">linkedin.com/in/alangrant</div>
+                      </div>
+                      <a class="btn btn-ghost" href="#" aria-label="Open LinkedIn profile">Open</a>
+                    </li>
+                  </ul>
+                </article>
+
+                <article class="card" aria-labelledby="profile-stats-title">
+                  <div class="card__header">
+                    <h3 class="card__title" id="profile-stats-title">Network</h3>
+                  </div>
+                  <div class="grid grid-2" role="list">
+                    <div class="stat" role="listitem" aria-label="Connections">
+                      <p class="stat__label">Connections</p>
+                      <p class="stat__value">500+</p>
+                    </div>
+                    <div class="stat" role="listitem" aria-label="Posts">
+                      <p class="stat__label">Posts</p>
+                      <p class="stat__value">12</p>
+                    </div>
+                  </div>
+                </article>
+              </aside>
+            </section>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
