@@ -1,233 +1,228 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alumni Portal | Dashboard</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alumni Portal | Dashboard</title>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
 
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/layout.css" />
-    <link rel="stylesheet" href="./css/components.css" />
-    <link rel="stylesheet" href="./css/responsive.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300..700&display=swap"
+    rel="stylesheet" />
 
-    <script src="./js/navigation.js" defer></script>
-    <script src="./js/main.js" defer></script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main-content">Skip to content</a>
+  <link rel="stylesheet" href="./css/global.css" />
+  <link rel="stylesheet" href="./css/layout.css" />
+  <link rel="stylesheet" href="./css/components.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
 
-    <div class="layout">
-      <aside class="sidebar" data-sidebar aria-label="Primary"></aside>
+  <script src="./js/navigation.js" defer></script>
+  <script src="./js/main.js" defer></script>
+</head>
 
-      <div class="main">
-        <header class="topbar" data-topbar></header>
-        <main class="content" id="main-content">
-          <div class="container">
-            <section class="hero" aria-label="Welcome">
-              <div class="hero__inner">
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <div class="layout">
+    <aside class="sidebar" data-sidebar aria-label="Primary"></aside>
+
+    <div class="main">
+      <header class="topbar" data-topbar></header>
+      <main class="content" id="main-content">
+        <div class="container">
+          <section class="hero" aria-label="Welcome">
+            <div class="hero__inner">
+              <div>
+                <h2 class="hero__title">Welcome back, Mr. Sharma</h2>
+                <p class="hero__subtitle">Batch of 2005 • Mechanical Engineering Department</p>
+              </div>
+              <div class="hero__actions" aria-label="Quick actions">
+                <a class="btn btn-accent" href="./profile.html">Update Profile</a>
+                <a class="btn btn-secondary btn-on-hero" href="./directory.html">View Batchmates</a>
+                <a class="btn btn-secondary btn-on-hero" href="./feed.html">Create Post</a>
+                <a class="btn btn-secondary btn-on-hero" href="./jobs.html">Browse Jobs</a>
+              </div>
+            </div>
+          </section>
+
+          <section class="stack" aria-labelledby="dashboard-overview-title">
+            <h3 class="section-title" id="dashboard-overview-title">Overview</h3>
+
+            <div class="grid grid-4" role="list">
+              <article class="card card--hover stat" role="listitem" aria-label="Total alumni">
+                <p class="stat__label">Total Alumni</p>
+                <p class="stat__value">12,450</p>
                 <div>
-                  <h2 class="hero__title">Welcome back, Mr. Sharma</h2>
-                  <p class="hero__subtitle">Batch of 2005 • Mechanical Engineering Department</p>
+                  <span class="badge badge--success">+12 this week</span>
                 </div>
-                <div class="hero__actions" aria-label="Quick actions">
-                  <a class="btn btn-accent" href="./profile.html">Update Profile</a>
-                  <a class="btn btn-ghost btn-on-hero" href="./directory.html">View Batchmates</a>
+              </article>
+
+              <article class="card card--hover stat" role="listitem" aria-label="Job openings">
+                <p class="stat__label">Job Openings</p>
+                <p class="stat__value">85</p>
+                <div>
+                  <span class="badge">New</span>
                 </div>
-              </div>
-            </section>
+              </article>
 
-            <section class="stack" aria-labelledby="dashboard-overview-title">
-              <h3 class="section-title" id="dashboard-overview-title">Overview</h3>
-
-              <div class="grid grid-4" role="list">
-                <article class="card card--hover stat" role="listitem" aria-label="Total alumni">
-                  <p class="stat__label">Total Alumni</p>
-                  <p class="stat__value">12,450</p>
-                  <div>
-                    <span class="badge badge--success">+12 this week</span>
-                  </div>
-                </article>
-
-                <article class="card card--hover stat" role="listitem" aria-label="Job openings">
-                  <p class="stat__label">Job Openings</p>
-                  <p class="stat__value">85</p>
-                  <div>
-                    <span class="badge">New</span>
-                  </div>
-                </article>
-
-                <article class="card card--hover stat" role="listitem" aria-label="Upcoming events">
-                  <p class="stat__label">Upcoming Events</p>
-                  <p class="stat__value">12</p>
-                  <div>
-                    <span class="badge">Next 30 days</span>
-                  </div>
-                </article>
-
-                <article class="card card--hover stat" role="listitem" aria-label="New updates">
-                  <p class="stat__label">New Updates</p>
-                  <p class="stat__value">24</p>
-                </article>
-              </div>
-            </section>
-
-            <section class="grid grid-12" aria-label="Dashboard previews">
-              <section class="span-8 stack" aria-labelledby="recent-updates-title">
-                <div class="card__header">
-                  <h3 class="card__title" id="recent-updates-title">Recent Updates</h3>
-                  <a class="link" href="./feed.html">View all</a>
+              <article class="card card--hover stat" role="listitem" aria-label="Upcoming events">
+                <p class="stat__label">Upcoming Events</p>
+                <p class="stat__value">12</p>
+                <div>
+                  <span class="badge">Next 30 days</span>
                 </div>
+              </article>
 
-                <article class="card card--flush" aria-label="Campus news update">
-                  <div class="media">
-                    <img
-                      class="media__img"
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2l_mJ6MpOCVRlYmGcXa4ODyGtNaedKGej15gV3x6bcqT1eAnO5_xuKfv-WZmYY0tIuxz54AlQCm6rJ65LWfDt9KqEahs6Xj8Gz86RlxemsHWbNU4xEImkCaDwmpmSCcKuQgtbZqFgnNQAOM7qCKDF_EPYIZa-biF_Mr0vunKjT42ba0_q-N8ZyJmw-FMT4QrOZOff89BLrtq_GIu0qp9eu4Njw0AMKrdNFgzd7Da57wjgC-AmQZZdGul8A02VN7LdcFArXhJ8HVc"
-                      alt="University campus building"
-                      loading="lazy"
-                    />
-                    <div class="media__body">
-                      <span class="badge badge--accent">Campus News</span>
-                      <h4 class="title-md">Annual General Meeting Highlights 2023</h4>
-                      <p class="text-muted">
-                        The annual alumni meet was a resounding success with over 500 attendees. Key
-                        discussions included the new scholarship fund and infrastructure upgrades.
-                      </p>
-                      <p class="meta">Oct 12, 2023 • 5 min read</p>
-                    </div>
-                  </div>
-                </article>
+              <article class="card card--hover stat" role="listitem" aria-label="New updates">
+                <p class="stat__label">New Updates</p>
+                <p class="stat__value">24</p>
+              </article>
+            </div>
+          </section>
 
-                <article class="card card--flush" aria-label="Research update">
-                  <div class="media">
-                    <img
-                      class="media__img"
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBt8OlSSts-St9-MIRj4SVlQA1CHsU9-2dFi-_ztjslcXIaAYokHI-vo_V7AH2T-eqRIBc5yEngEHUQEGJWKktnJh-Kz8EuWWUgPV61WeozXHgDvMeRR5ENIP4MhaYHvMuIC7mrLRrM45qSXHCzGl7bn32WpVyXlkPBJK8zUhsYu7w1qXJ48z1XESexJktp_9RIhh1uxkZN0uqUqtVhGZVm3c6dzT3ENV6Oz0xS4fUy8pRM4VUVY_-EMx9TYYtz-LS0JXxJQpKQMbI"
-                      alt="Engineering laboratory equipment"
-                      loading="lazy"
-                    />
-                    <div class="media__body">
-                      <span class="badge">Research</span>
-                      <h4 class="title-md">New Robotics Research Wing Inaugurated</h4>
-                      <p class="text-muted">
-                        The college is proud to announce the opening of the state-of-the-art robotics
-                        lab, funded by the Class of 1998.
-                      </p>
-                      <p class="meta">Oct 08, 2023 • 3 min read</p>
-                    </div>
-                  </div>
-                </article>
-              </section>
-
-              <aside class="span-4 stack" aria-labelledby="upcoming-events-title">
-                <div class="card__header">
-                  <h3 class="card__title" id="upcoming-events-title">Upcoming Events</h3>
-                  <a class="link" href="./events.html">View calendar</a>
-                </div>
-
-                <section class="card" aria-label="Upcoming events list">
-                  <ul class="list">
-                    <li class="list-item">
-                      <div>
-                        <strong>Homecoming Dinner 2023</strong>
-                        <div class="meta">Oct 24 • Main Auditorium</div>
-                      </div>
-                      <span class="badge">Social</span>
-                    </li>
-                    <li class="list-item">
-                      <div>
-                        <strong>Tech Talk: AI in Engineering</strong>
-                        <div class="meta">Nov 01 • Online Webinar</div>
-                      </div>
-                      <span class="badge">Educational</span>
-                    </li>
-                    <li class="list-item">
-                      <div>
-                        <strong>Regional Alumni Meet - NYC</strong>
-                        <div class="meta">Nov 15 • Hilton Midtown</div>
-                      </div>
-                      <span class="badge">Networking</span>
-                    </li>
-                  </ul>
-                </section>
-              </aside>
-            </section>
-
-            <section class="stack" aria-labelledby="suggested-alumni-title">
+          <section class="grid grid-12" aria-label="Dashboard previews">
+            <section class="span-8 stack" aria-labelledby="recent-updates-title">
               <div class="card__header">
-                <h3 class="card__title" id="suggested-alumni-title">Suggested Alumni Connections</h3>
-                <a class="link" href="./directory.html">Browse directory</a>
+                <h3 class="card__title" id="recent-updates-title">Recent Updates</h3>
+                <a class="link" href="./feed.html">View all</a>
               </div>
 
-              <div class="grid grid-4" role="list">
-                <article class="card card--center" role="listitem" aria-label="Suggested alumni: Priya Singh">
-                  <img
-                    class="avatar"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAq2q0xUpmkPclddU3Aiz6mIH7ear_19MzxTYAbmwwwryA-Jlk-m73f5gtCbLZGnjBSjh8qY6BVGon6g03FaRoY6RZDLXrCS024t5StykElLKmBQcEFGQUYvijF8MOyciQJpHVpFijJyHH0KDOJwHX5VTZawQUAyWsHISZrzlfqKaX5FW7QZi07xnHUOs1WuA1-W_6kbkpm_RsvmGh3plabxjhsUSReAljZ9yjRcA0mIa6O0lPZy5ajf6JoumXaxbmv4nQbgNNXNh8"
-                    alt="Portrait of Priya Singh"
-                    loading="lazy"
-                  />
-                  <h4 class="title-sm">Priya Singh</h4>
-                  <p class="meta">Batch of 2008 • Civil</p>
-                  <p class="meta">Senior Project Manager</p>
-                  <button class="btn btn-primary btn-block" type="button">Connect</button>
-                </article>
+              <article class="card card--flush" aria-label="Campus news update">
+                <div class="media">
+                  <img class="media__img"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2l_mJ6MpOCVRlYmGcXa4ODyGtNaedKGej15gV3x6bcqT1eAnO5_xuKfv-WZmYY0tIuxz54AlQCm6rJ65LWfDt9KqEahs6Xj8Gz86RlxemsHWbNU4xEImkCaDwmpmSCcKuQgtbZqFgnNQAOM7qCKDF_EPYIZa-biF_Mr0vunKjT42ba0_q-N8ZyJmw-FMT4QrOZOff89BLrtq_GIu0qp9eu4Njw0AMKrdNFgzd7Da57wjgC-AmQZZdGul8A02VN7LdcFArXhJ8HVc"
+                    alt="University campus building" loading="lazy" />
+                  <div class="media__body">
+                    <span class="badge badge--accent">Campus News</span>
+                    <h4 class="title-md">Annual General Meeting Highlights 2023</h4>
+                    <p class="text-muted">
+                      The annual alumni meet was a resounding success with over 500 attendees. Key
+                      discussions included the new scholarship fund and infrastructure upgrades.
+                    </p>
+                    <p class="meta">Oct 12, 2023 • 5 min read</p>
+                  </div>
+                </div>
+              </article>
 
-                <article class="card card--center" role="listitem" aria-label="Suggested alumni: Rajiv Kapoor">
-                  <img
-                    class="avatar"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFbki_8MO2_JBUQ01cb6i4ATSlMuIYX4L_4IrxYxda-Y75rSlzdF7AHo0Ikn4Ak3KjAxKOJQ32EMRNnTAbRDJv3gZd2fKA-t60Kz9Ea_XizcUTkAspB0jTohU5yB-GD4hik5AxOi6VylU0a01EraZhspXzzOzoREg3yzioIFDTaI3U8OMz9nJ2wO78PAsqK8rjR5MdjE5pBmsoJhnF-3UfkJspy5-bSB4BAqRpAGivfRLWxjvcx5dwkoaoqHxJs1owlT0aekP7tWU"
-                    alt="Portrait of Rajiv Kapoor"
-                    loading="lazy"
-                  />
-                  <h4 class="title-sm">Rajiv Kapoor</h4>
-                  <p class="meta">Batch of 1995 • Electrical</p>
-                  <p class="meta">CTO at TechFlow</p>
-                  <button class="btn btn-primary btn-block" type="button">Connect</button>
-                </article>
-
-                <article class="card card--center" role="listitem" aria-label="Suggested alumni: Sarah Jenkins">
-                  <img
-                    class="avatar"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuADAS0KeiU3nxRmjV6Od_9SB1Dr5RRbygM2_uXETq0ItCHhlwY2JvMJH-9cUQl_HGEdh4I91joV4pLVnOCgXxMQk-Y78mRQaBNzTXNbzS02HqEzSlQhLvu2yPfBcsf0yfAXG42PqtP2TUaPQCky0A74Q7ZkHmaVk8IoZs8ZY50sFpv2zfwq2W1QL7KiIKqo0wEX-2Ee3gb6TEXYZz07S-QdLNs6rhBfNKInZI06PEShPk2Uw2Tsx79nFhyLgD7umOlNsDCY7veXtEw"
-                    alt="Portrait of Sarah Jenkins"
-                    loading="lazy"
-                  />
-                  <h4 class="title-sm">Sarah Jenkins</h4>
-                  <p class="meta">Batch of 2010 • Computer Science</p>
-                  <p class="meta">Lead Developer</p>
-                  <button class="btn btn-primary btn-block" type="button">Connect</button>
-                </article>
-
-                <article class="card card--center" role="listitem" aria-label="Suggested alumni: Amit Patel">
-                  <img
-                    class="avatar"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoKIJyOgWmYN_1RjS2mZdUmLz6U_Rk7oA_FQrGfbeur8wDpsH02Ms7AaS9XcIW25hB2kC0IExtNuBVctIk6l5jbMguPXKOpsl5TOFMqC8hzaP6_2O0G6uifta8-N8CIlCqKgtYEMeXglBAZsYgyAvEx0BLLdVgCHaptr6uHCD0UkGLxeIa9zmqiy7_VfB1JuAhR-8fS1mgv_vHTKjXhIVgYnXN7daeT9hMH1vSPhGoYy69pBkkDbf-jnrD5XBKlk2OxVxBpVVkHZs"
-                    alt="Portrait of Amit Patel"
-                    loading="lazy"
-                  />
-                  <h4 class="title-sm">Amit Patel</h4>
-                  <p class="meta">Batch of 2002 • Mechanical</p>
-                  <p class="meta">Director of Ops</p>
-                  <button class="btn btn-primary btn-block" type="button">Connect</button>
-                </article>
-              </div>
+              <article class="card card--flush" aria-label="Research update">
+                <div class="media">
+                  <img class="media__img"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBt8OlSSts-St9-MIRj4SVlQA1CHsU9-2dFi-_ztjslcXIaAYokHI-vo_V7AH2T-eqRIBc5yEngEHUQEGJWKktnJh-Kz8EuWWUgPV61WeozXHgDvMeRR5ENIP4MhaYHvMuIC7mrLRrM45qSXHCzGl7bn32WpVyXlkPBJK8zUhsYu7w1qXJ48z1XESexJktp_9RIhh1uxkZN0uqUqtVhGZVm3c6dzT3ENV6Oz0xS4fUy8pRM4VUVY_-EMx9TYYtz-LS0JXxJQpKQMbI"
+                    alt="Engineering laboratory equipment" loading="lazy" />
+                  <div class="media__body">
+                    <span class="badge">Research</span>
+                    <h4 class="title-md">New Robotics Research Wing Inaugurated</h4>
+                    <p class="text-muted">
+                      The college is proud to announce the opening of the state-of-the-art robotics
+                      lab, funded by the Class of 1998.
+                    </p>
+                    <p class="meta">Oct 08, 2023 • 3 min read</p>
+                  </div>
+                </div>
+              </article>
             </section>
-          </div>
-        </main>
-      </div>
+
+            <aside class="span-4 stack" aria-labelledby="upcoming-events-title">
+              <div class="card__header">
+                <h3 class="card__title" id="upcoming-events-title">Upcoming Events</h3>
+                <a class="link" href="./events.html">View calendar</a>
+              </div>
+
+              <section class="card" aria-label="Upcoming events list">
+                <ul class="list">
+                  <li class="list-item">
+                    <div>
+                      <strong>Homecoming Dinner 2023</strong>
+                      <div class="meta">Oct 24 • Main Auditorium</div>
+                    </div>
+                    <span class="badge">Social</span>
+                  </li>
+                  <li class="list-item">
+                    <div>
+                      <strong>Tech Talk: AI in Engineering</strong>
+                      <div class="meta">Nov 01 • Online Webinar</div>
+                    </div>
+                    <span class="badge">Educational</span>
+                  </li>
+                  <li class="list-item">
+                    <div>
+                      <strong>Regional Alumni Meet - NYC</strong>
+                      <div class="meta">Nov 15 • Hilton Midtown</div>
+                    </div>
+                    <span class="badge">Networking</span>
+                  </li>
+                </ul>
+              </section>
+            </aside>
+          </section>
+
+          <section class="stack" aria-labelledby="suggested-alumni-title">
+            <div class="card__header">
+              <h3 class="card__title" id="suggested-alumni-title">Suggested Alumni Connections</h3>
+              <a class="link" href="./directory.html">Browse directory</a>
+            </div>
+
+            <div class="grid grid-4" role="list">
+              <article class="card card--center" role="listitem" aria-label="Suggested alumni: Priya Singh">
+                <img class="avatar"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAq2q0xUpmkPclddU3Aiz6mIH7ear_19MzxTYAbmwwwryA-Jlk-m73f5gtCbLZGnjBSjh8qY6BVGon6g03FaRoY6RZDLXrCS024t5StykElLKmBQcEFGQUYvijF8MOyciQJpHVpFijJyHH0KDOJwHX5VTZawQUAyWsHISZrzlfqKaX5FW7QZi07xnHUOs1WuA1-W_6kbkpm_RsvmGh3plabxjhsUSReAljZ9yjRcA0mIa6O0lPZy5ajf6JoumXaxbmv4nQbgNNXNh8"
+                  alt="Portrait of Priya Singh" loading="lazy" />
+                <h4 class="title-sm"><a href="./user-profile.html?id=priya" class="link-reset">Priya Singh</a></h4>
+                <p class="meta">Batch of 2008 • Civil</p>
+                <p class="meta">Senior Project Manager</p>
+                <div class="stack stack--xs">
+                  <button class="btn btn-primary btn-block" type="button" data-connect>Connect</button>
+                  <a class="btn btn-ghost btn-block btn-sm" href="./user-profile.html?id=priya">View Profile</a>
+                </div>
+              </article>
+
+              <article class="card card--center" role="listitem" aria-label="Suggested alumni: Rajiv Kapoor">
+                <img class="avatar"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFbki_8MO2_JBUQ01cb6i4ATSlMuIYX4L_4IrxYxda-Y75rSlzdF7AHo0Ikn4Ak3KjAxKOJQ32EMRNnTAbRDJv3gZd2fKA-t60Kz9Ea_XizcUTkAspB0jTohU5yB-GD4hik5AxOi6VylU0a01EraZhspXzzOzoREg3yzioIFDTaI3U8OMz9nJ2wO78PAsqK8rjR5MdjE5pBmsoJhnF-3UfkJspy5-bSB4BAqRpAGivfRLWxjvcx5dwkoaoqHxJs1owlT0aekP7tWU"
+                  alt="Portrait of Rajiv Kapoor" loading="lazy" />
+                <h4 class="title-sm"><a href="./user-profile.html?id=rajiv" class="link-reset">Rajiv Kapoor</a></h4>
+                <p class="meta">Batch of 1995 • Electrical</p>
+                <p class="meta">CTO at TechFlow</p>
+                <div class="stack stack--xs">
+                  <button class="btn btn-primary btn-block" type="button" data-connect>Connect</button>
+                  <a class="btn btn-ghost btn-block btn-sm" href="./user-profile.html?id=rajiv">View Profile</a>
+                </div>
+              </article>
+
+              <article class="card card--center" role="listitem" aria-label="Suggested alumni: Sarah Jenkins">
+                <img class="avatar"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuADAS0KeiU3nxRmjV6Od_9SB1Dr5RRbygM2_uXETq0ItCHhlwY2JvMJH-9cUQl_HGEdh4I91joV4pLVnOCgXxMQk-Y78mRQaBNzTXNbzS02HqEzSlQhLvu2yPfBcsf0yfAXG42PqtP2TUaPQCky0A74Q7ZkHmaVk8IoZs8ZY50sFpv2zfwq2W1QL7KiIKqo0wEX-2Ee3gb6TEXYZz07S-QdLNs6rhBfNKInZI06PEShPk2Uw2Tsx79nFhyLgD7umOlNsDCY7veXtEw"
+                  alt="Portrait of Sarah Jenkins" loading="lazy" />
+                <h4 class="title-sm"><a href="./user-profile.html?id=sarah" class="link-reset">Sarah Jenkins</a></h4>
+                <p class="meta">Batch of 2010 • Computer Science</p>
+                <p class="meta">Lead Developer</p>
+                <div class="stack stack--xs">
+                  <button class="btn btn-primary btn-block" type="button" data-connect>Connect</button>
+                  <a class="btn btn-ghost btn-block btn-sm" href="./user-profile.html?id=sarah">View Profile</a>
+                </div>
+              </article>
+
+              <article class="card card--center" role="listitem" aria-label="Suggested alumni: Amit Patel">
+                <img class="avatar"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoKIJyOgWmYN_1RjS2mZdUmLz6U_Rk7oA_FQrGfbeur8wDpsH02Ms7AaS9XcIW25hB2kC0IExtNuBVctIk6l5jbMguPXKOpsl5TOFMqC8hzaP6_2O0G6uifta8-N8CIlCqKgtYEMeXglBAZsYgyAvEx0BLLdVgCHaptr6uHCD0UkGLxeIa9zmqiy7_VfB1JuAhR-8fS1mgv_vHTKjXhIVgYnXN7daeT9hMH1vSPhGoYy69pBkkDbf-jnrD5XBKlk2OxVxBpVVkHZs"
+                  alt="Portrait of Amit Patel" loading="lazy" />
+                <h4 class="title-sm"><a href="./user-profile.html?id=amit" class="link-reset">Amit Patel</a></h4>
+                <p class="meta">Batch of 2002 • Mechanical</p>
+                <p class="meta">Director of Ops</p>
+                <div class="stack stack--xs">
+                  <button class="btn btn-primary btn-block" type="button" data-connect>Connect</button>
+                  <a class="btn btn-ghost btn-block btn-sm" href="./user-profile.html?id=amit">View Profile</a>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </main>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

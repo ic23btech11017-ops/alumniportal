@@ -8,6 +8,7 @@
 
 const NAV_ITEMS = [
   { href: "dashboard.html", label: "Dashboard", icon: "dashboard" },
+
   { href: "feed.html", label: "News Feed", icon: "feed" },
   { href: "events.html", label: "Events", icon: "event" },
   { href: "jobs.html", label: "Job Board", icon: "work" },
@@ -61,6 +62,14 @@ function renderSidebar() {
     <nav class="sidebar__nav" aria-label="Sidebar">
       ${items}
     </nav>
+    <div class="sidebar__footer">
+      <button class="nav-link" data-modal-open="modal-logout" type="button" style="width:100%;cursor:pointer;background:none;font:inherit;border:1px solid transparent">
+        <span class="nav-icon" aria-hidden="true" style="background:rgba(220,38,38,0.08);border-color:rgba(220,38,38,0.18);color:#dc2626">
+          <span class="material-symbols-outlined">logout</span>
+        </span>
+        <span class="nav-label">Logout</span>
+      </button>
+    </div>
   `;
 }
 
@@ -233,6 +242,29 @@ function initLayoutShell() {
   if (!document.querySelector(".bottom-nav")) {
     const main = document.querySelector(".main");
     if (main) main.insertAdjacentHTML("beforeend", renderBottomNav());
+  }
+
+  // Inject logout confirmation modal (shared across all layout pages)
+  if (!document.getElementById("modal-logout")) {
+    document.body.insertAdjacentHTML("beforeend", `
+      <div class="modal-overlay" id="modal-logout">
+        <div class="modal" role="dialog" aria-labelledby="modal-logout-title" aria-modal="true">
+          <div class="modal__header">
+            <h2 class="modal__title" id="modal-logout-title">Confirm Logout</h2>
+            <button class="icon-btn" type="button" data-modal-close aria-label="Close">
+              <span class="material-symbols-outlined">close</span>
+            </button>
+          </div>
+          <div class="modal__body">
+            <p class="m-0">Are you sure you want to log out of the Alumni Portal?</p>
+          </div>
+          <div class="modal__footer">
+            <button class="btn btn-ghost" type="button" data-modal-close>Cancel</button>
+            <button class="btn btn-danger" type="button" data-logout-confirm>Logout</button>
+          </div>
+        </div>
+      </div>
+    `);
   }
 
   const toggle = topbar.querySelector("[data-sidebar-toggle]");

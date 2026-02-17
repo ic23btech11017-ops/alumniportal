@@ -12,6 +12,8 @@
   top: 0;
   height: 100vh;
   overflow: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .layout.is-collapsed {

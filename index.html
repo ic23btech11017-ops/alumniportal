@@ -1,106 +1,85 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alumni Portal | Login</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alumni Portal | Login</title>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
 
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/layout.css" />
-    <link rel="stylesheet" href="./css/components.css" />
-    <link rel="stylesheet" href="./css/responsive.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300..700&display=swap"
+    rel="stylesheet" />
 
-    <script src="./js/navigation.js" defer></script>
-    <script src="./js/main.js" defer></script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main-content">Skip to content</a>
+  <link rel="stylesheet" href="./css/global.css" />
+  <link rel="stylesheet" href="./css/layout.css" />
+  <link rel="stylesheet" href="./css/components.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
 
-    <main class="auth" id="main-content">
-      <div class="auth__container container">
-        <section class="auth-card card" aria-label="Login">
-          <div class="auth-cover" aria-hidden="true"></div>
-          <div class="auth-body">
-            <div class="auth-brand">
-              <div class="auth-logo" aria-hidden="true">
-                <div class="auth-logo__inner">
-                  <span class="material-symbols-outlined" aria-hidden="true">school</span>
-                </div>
-              </div>
-              <div>
-                <h1 class="auth-title">Alumni Portal Login</h1>
-                <p class="auth-subtitle">Welcome back. Please enter your details.</p>
+  <script src="./js/navigation.js" defer></script>
+  <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <main class="auth" id="main-content">
+    <div class="auth__container container">
+      <section class="auth-card card" aria-label="Login">
+        <div class="auth-cover" aria-hidden="true"></div>
+        <div class="auth-body">
+          <div class="auth-brand">
+            <div class="auth-logo" aria-hidden="true">
+              <div class="auth-logo__inner">
+                <span class="material-symbols-outlined" aria-hidden="true">school</span>
               </div>
             </div>
-
-            <form class="form" action="./dashboard.html" method="get" aria-label="Login form">
-              <div class="field">
-                <label class="form-label" for="login-email">Email Address</label>
-                <div class="input-icon">
-                  <span class="input-icon__icon material-symbols-outlined" aria-hidden="true">mail</span>
-                  <input
-                    class="input-field"
-                    id="login-email"
-                    name="email"
-                    type="email"
-                    autocomplete="email"
-                    placeholder="john.doe@alumni.edu"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div class="field">
-                <label class="form-label" for="login-password">Password</label>
-                <div class="input-icon">
-                  <span class="input-icon__icon material-symbols-outlined" aria-hidden="true">lock</span>
-                  <input
-                    class="input-field"
-                    id="login-password"
-                    name="password"
-                    type="password"
-                    autocomplete="current-password"
-                    placeholder="Enter your password"
-                    required
-                    data-password
-                  />
-                  <button
-                    class="input-icon__btn"
-                    type="button"
-                    data-password-toggle
-                    aria-label="Show password"
-                  >
-                    <span class="material-symbols-outlined" aria-hidden="true">visibility</span>
-                  </button>
-                </div>
-              </div>
-
-              <div class="form-actions form-actions--between">
-                <a class="link" href="./forgot-password.html">Forgot password?</a>
-                <button class="btn btn-primary" type="submit">Sign In</button>
-              </div>
-            </form>
-
-            <div class="auth-footer">
-              <p class="m-0">
-                Don’t have an account? <a class="link" href="./register.html">Create an account</a>
-              </p>
+            <div>
+              <h1 class="auth-title">Alumni Portal Login</h1>
+              <p class="auth-subtitle">Welcome back. Please enter your details.</p>
             </div>
           </div>
-        </section>
-      </div>
-    </main>
-  </body>
+
+          <form class="form" action="./dashboard.html" method="get" aria-label="Login form">
+            <div class="field">
+              <label class="form-label" for="login-email">Email Address</label>
+              <div class="input-icon">
+                <span class="input-icon__icon material-symbols-outlined" aria-hidden="true">mail</span>
+                <input class="input-field" id="login-email" name="email" type="email" autocomplete="email"
+                  placeholder="john.doe@alumni.edu" required />
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="form-label" for="login-password">Password</label>
+              <div class="input-icon">
+                <span class="input-icon__icon material-symbols-outlined" aria-hidden="true">lock</span>
+                <input class="input-field" id="login-password" name="password" type="password"
+                  autocomplete="current-password" placeholder="Enter your password" required data-password />
+                <button class="input-icon__btn" type="button" data-password-toggle aria-label="Show password">
+                  <span class="material-symbols-outlined" aria-hidden="true">visibility</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="form-actions form-actions--between">
+              <a class="link" href="./forgot-password.html">Forgot password?</a>
+              <button class="btn btn-primary" type="submit">Sign In</button>
+            </div>
+          </form>
+
+          <div class="auth-footer">
+            <p class="m-0">
+              Don’t have an account? <a class="link" href="./register.html">Create an account</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
 </html>

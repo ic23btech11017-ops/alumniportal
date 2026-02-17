@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dr. Alan Grant | Alumni Portal</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300..700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+
+    <script src="./js/profile-data.js" defer></script>
+    <script src="./js/navigation.js" defer></script>
+    <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <div class="layout">
+        <aside class="sidebar" data-sidebar aria-label="Primary"></aside>
+
+        <div class="main">
+            <header class="topbar" data-topbar></header>
+            <main class="content" id="main-content">
+                <div class="container">
+
+                    <!-- Breadcrumb -->
+                    <nav aria-label="Breadcrumb" style="margin-bottom: var(--space-4);">
+                        <a href="./directory.html" class="link"
+                            style="color:var(--text);text-decoration:none;display:inline-flex;align-items:center;gap:4px;font-size:0.9rem;font-weight:500">
+                            <span class="material-symbols-outlined" style="font-size:18px">arrow_back</span>
+                            Back to Directory
+                        </a>
+                    </nav>
+
+                    <header class="page-header">
+                        <div>
+                            <h2 class="page-header__title">Alumni Profile</h2>
+                            <p class="page-header__subtitle">Professional profile and alumni details.</p>
+                        </div>
+                        <div class="stack stack--sm" aria-label="Profile actions">
+                            <button class="btn btn-primary" type="button" data-connect>Connect</button>
+                            <button class="btn btn-ghost" type="button" data-modal-open="modal-message">Message</button>
+                        </div>
+                    </header>
+
+                    <section class="card card--flush" aria-label="Profile header">
+                        <div class="cover" aria-hidden="true"></div>
+                        <div class="profile-header">
+                            <div class="profile-header__top">
+                                <div class="profile-header__identity">
+                                    <img class="avatar avatar--md" id="p-avatar" src="" alt="Portrait" loading="lazy" />
+                                    <div>
+                                        <h3 class="profile-header__name" id="p-name">Loading...</h3>
+                                        <p class="profile-header__role">
+                                            <span id="p-role"></span> at <strong id="p-company"></strong>
+                                        </p>
+                                        <p class="meta"><span id="p-batch"></span> • <span id="p-branch"></span> • <span
+                                                id="p-location"></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs" aria-label="Profile status">
+                                <span class="badge badge--success">Verified</span>
+                                <span class="badge badge--accent">Open to Opportunities</span>
+                            </div>
+                        </div>
+                </div>
+                </section>
+
+                <section class="grid grid-12" aria-label="Profile details">
+                    <section class="span-8 stack" aria-labelledby="about-title">
+                        <article class="card">
+                            <div class="card__header">
+                                <h3 class="card__title" id="about-title">About</h3>
+                            </div>
+                            <p class="text-muted m-0" id="p-about">
+                                Loading...
+                            </p>
+                        </article>
+
+                        <article class="card" aria-labelledby="experience-title">
+                            <div class="card__header">
+                                <h3 class="card__title" id="experience-title">Experience</h3>
+                            </div>
+                            <div class="card-list" id="p-experience">
+                                <!-- Injected via JS -->
+                            </div>
+                        </article>
+
+                        <article class="card" aria-labelledby="skills-title">
+                            <div class="card__header">
+                                <h3 class="card__title" id="skills-title">Skills</h3>
+                            </div>
+                            <div class="tabs" aria-label="Skill tags" id="p-skills">
+                                <!-- Injected via JS -->
+                            </div>
+                        </article>
+                    </section>
+
+                    <aside class="span-4 stack" aria-label="Profile sidebar">
+                        <article class="card" aria-labelledby="contact-title">
+                            <div class="card__header">
+                                <h3 class="card__title" id="contact-title">Contact</h3>
+                            </div>
+                            <ul class="list">
+                                <li class="list-item">
+                                    <div>
+                                        <strong>Email</strong>
+                                        <div class="meta" id="p-email"></div>
+                                    </div>
+                                    <button class="btn btn-ghost" type="button" id="p-copy-email"
+                                        data-copy="">Copy</button>
+                                </li>
+                                <li class="list-item">
+                                    <div>
+                                        <strong>LinkedIn</strong>
+                                        <div class="meta" id="p-linkedin"></div>
+                                    </div>
+                                    <a class="btn btn-ghost" href="#" id="p-linkedin-link"
+                                        aria-label="Open LinkedIn profile" target="_blank">Open</a>
+                                </li>
+                            </ul>
+                        </article>
+
+                        <article class="card" aria-labelledby="profile-stats-title">
+                            <div class="card__header">
+                                <h3 class="card__title" id="profile-stats-title">Network</h3>
+                            </div>
+                            <div class="grid grid-2" role="list">
+                                <div class="stat" role="listitem" aria-label="Connections">
+                                    <p class="stat__label">Connections</p>
+                                    <p class="stat__value">500+</p>
+                                </div>
+                                <div class="stat" role="listitem" aria-label="Posts">
+                                    <p class="stat__label">Posts</p>
+                                    <p class="stat__value">12</p>
+                                </div>
+                            </div>
+                        </article>
+                    </aside>
+                </section>
+        </div>
+        </main>
+    </div>
+    </div>
+
+    <!-- Message Modal -->
+    <div class="modal-overlay" id="modal-message">
+        <div class="modal" role="dialog" aria-labelledby="modal-message-title" aria-modal="true">
+            <div class="modal__header">
+                <h2 class="modal__title" id="modal-message-title">Send a Message</h2>
+                <button class="icon-btn" type="button" data-modal-close aria-label="Close">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            <form data-message-form>
+                <div class="modal__body">
+                    <div class="form">
+                        <div class="form-row">
+                            <label class="form-label">To</label>
+                            <input class="input-field" type="text" value="Alan Grant" disabled />
+                        </div>
+                        <div class="form-row">
+                            <label class="form-label" for="msg-subject">Subject</label>
+                            <input class="input-field" type="text" id="msg-subject" placeholder="Enter subject" />
+                        </div>
+                        <div class="form-row">
+                            <label class="form-label" for="msg-body">Message</label>
+                            <textarea class="textarea" id="msg-body" placeholder="Write your message…"
+                                required></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__footer">
+                    <button class="btn btn-ghost" type="button" data-modal-close>Cancel</button>
+                    <button class="btn btn-primary" type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
